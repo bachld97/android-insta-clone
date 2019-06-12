@@ -8,8 +8,9 @@ interface PostsContract {
 
     interface View : BaseView<Presenter> {
         fun showLoadingIndicator()
-        fun showPostDetailUi(requestedPost: Post)
-        fun showShareUi(requestedPost: Post)
+        fun showPosts(posts: List<Post>)
+        fun navigatePostDetailUi(requestedPost: Post)
+        fun navigateShareUi(requestedPost: Post)
     }
 
     interface Presenter : BasePresenter {

@@ -5,14 +5,11 @@ import com.example.instagramclone.data.Post
 interface PostDataSource {
 
     interface LoadPostsCallback {
-
-        fun onTasksLoaded(posts: List<Post>)
-
-        fun onDataNotAvailable()
-
+        fun onPostsLoaded(posts: List<Post>)
+        fun onError(error: Error)
     }
 
-    fun loadPosts(onComplete: LoadPostsCallback)
+    fun loadPosts(callback: LoadPostsCallback)
 
     fun likePost(post: Post)
 

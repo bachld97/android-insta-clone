@@ -3,7 +3,7 @@ package com.example.instagramclone.data.source
 import com.example.instagramclone.data.Post
 
 class PostRepository: PostDataSource {
-    override fun loadPosts(onComplete: PostDataSource.LoadPostsCallback) {
+    override fun loadPosts(callback: PostDataSource.LoadPostsCallback) {
 
     }
 
